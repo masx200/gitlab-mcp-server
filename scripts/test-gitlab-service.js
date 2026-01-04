@@ -49,7 +49,7 @@ async function test1_validateToken() {
       const isValid = await gitlabService.validateToken();
       console.log(`   Token 有效性: ${isValid ? "✅ 有效" : "❌ 无效"}`);
       return isValid;
-    }
+    },
   );
 }
 
@@ -70,7 +70,7 @@ async function test2_getCurrentUser() {
       console.log(`      - 个人页面: ${result.data.web_url}`);
 
       return result;
-    }
+    },
   );
 }
 
@@ -115,7 +115,7 @@ async function test4_createRepository() {
       repoName,
       "使用 MCP GitLab Service 创建的测试仓库",
       "public",
-      true
+      true,
     );
 
     console.log("   ✅ 仓库创建成功!");
@@ -169,7 +169,7 @@ async function test6_createBranch(createdRepo) {
     const result = await gitlabService.createBranch(
       projectId,
       branchName,
-      "main"
+      "main",
     );
 
     console.log("   ✅ 分支创建成功!");

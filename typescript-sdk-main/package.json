@@ -1,0 +1,64 @@
+{
+  "name": "@modelcontextprotocol/sdk",
+  "version": "1.25.1",
+  "description": "Model Context Protocol implementation for TypeScript",
+  "license": "MIT",
+  "author": "Anthropic, PBC (https://anthropic.com)",
+  "homepage": "https://modelcontextprotocol.io",
+  "bugs": "https://github.com/modelcontextprotocol/typescript-sdk/issues",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modelcontextprotocol/typescript-sdk.git"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10.24.0"
+  },
+  "packageManager": "pnpm@10.24.0",
+  "keywords": [
+    "modelcontextprotocol",
+    "mcp"
+  ],
+  "scripts": {
+    "fetch:spec-types": "tsx scripts/fetch-spec-types.ts",
+    "examples:simple-server:w": "pnpm --filter @modelcontextprotocol/examples-server exec tsx --watch src/simpleStreamableHttp.ts --oauth",
+    "typecheck:all": "pnpm -r typecheck",
+    "build:all": "pnpm -r build",
+    "prepack:all": "pnpm -r prepack",
+    "lint:all": "pnpm -r lint",
+    "lint:fix:all": "pnpm -r lint:fix",
+    "check:all": "pnpm -r typecheck && pnpm -r lint",
+    "test:all": "pnpm -r test"
+  },
+  "devDependencies": {
+    "@cfworker/json-schema": "catalog:runtimeShared",
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
+    "@eslint/js": "catalog:devTools",
+    "@types/content-type": "catalog:devTools",
+    "@types/cors": "catalog:devTools",
+    "@types/cross-spawn": "catalog:devTools",
+    "@types/eventsource": "catalog:devTools",
+    "@types/express": "catalog:devTools",
+    "@types/express-serve-static-core": "catalog:devTools",
+    "@types/node": "^24.10.1",
+    "@types/supertest": "catalog:devTools",
+    "@types/ws": "catalog:devTools",
+    "@typescript/native-preview": "catalog:devTools",
+    "eslint": "catalog:devTools",
+    "eslint-config-prettier": "catalog:devTools",
+    "eslint-plugin-n": "catalog:devTools",
+    "prettier": "catalog:devTools",
+    "supertest": "catalog:devTools",
+    "tsdown": "catalog:devTools",
+    "tsx": "catalog:devTools",
+    "typescript": "catalog:devTools",
+    "typescript-eslint": "catalog:devTools",
+    "vitest": "catalog:devTools",
+    "ws": "catalog:devTools"
+  },
+  "resolutions": {
+    "strip-ansi": "6.0.1"
+  }
+}

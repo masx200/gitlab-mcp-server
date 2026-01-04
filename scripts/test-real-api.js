@@ -151,7 +151,7 @@ async function testCreateRepository() {
     if (error.response?.data) {
       console.error(
         "   错误详情:",
-        JSON.stringify(error.response.data, null, 2)
+        JSON.stringify(error.response.data, null, 2),
       );
     }
     throw error;

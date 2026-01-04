@@ -10,12 +10,21 @@ importers:
       "@modelcontextprotocol/sdk":
         specifier: ^1.25.1
         version: 1.25.1(hono@4.11.3)(zod@4.3.5)
+      "@types/node":
+        specifier: ^25.0.3
+        version: 25.0.3
       dotenv:
         specifier: ^16.3.0
         version: 16.6.1
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
       undici:
         specifier: ^6.0.0
         version: 6.22.0
+      zod:
+        specifier: ~4.3.5
+        version: 4.3.5
 
 packages:
   "@hono/node-server@1.19.7":
@@ -37,6 +46,11 @@ packages:
     peerDependenciesMeta:
       "@cfworker/json-schema":
         optional: true
+
+  "@types/node@25.0.3":
+    resolution: {
+      integrity: sha512-W609buLVRVmeW693xKfzHeIV6nJGGz98uCPfeXI1ELMLXVeKYZ9m15fAMSaUPBHYLGFsVRcMmSCksQOrZV9BYA==,
+    }
 
   accepts@2.0.0:
     resolution: {
@@ -530,6 +544,18 @@ packages:
     }
     engines: { node: ">= 0.6" }
 
+  typescript@5.9.3:
+    resolution: {
+      integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==,
+    }
+    engines: { node: ">=14.17" }
+    hasBin: true
+
+  undici-types@7.16.0:
+    resolution: {
+      integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==,
+    }
+
   undici@6.22.0:
     resolution: {
       integrity: sha512-hU/10obOIu62MGYjdskASR3CUAiYaFTtC9Pa6vHyf//mAipSvSQg6od2CnJswq7fvzNS3zJhxoRkgNVaHurWKw==,
@@ -598,6 +624,10 @@ snapshots:
     transitivePeerDependencies:
       - hono
       - supports-color
+
+  "@types/node@25.0.3":
+    dependencies:
+      undici-types: 7.16.0
 
   accepts@2.0.0:
     dependencies:
@@ -946,6 +976,10 @@ snapshots:
       content-type: 1.0.5
       media-typer: 1.1.0
       mime-types: 3.0.2
+
+  typescript@5.9.3: {}
+
+  undici-types@7.16.0: {}
 
   undici@6.22.0: {}
 

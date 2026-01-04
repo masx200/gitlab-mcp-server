@@ -70,7 +70,7 @@ async function testMCPServer() {
       },
       {
         capabilities: {},
-      }
+      },
     );
 
     // 3. 连接到服务器
@@ -119,7 +119,7 @@ async function testMCPServer() {
 
     console.log("✅ 列出项目成功!");
     console.log(
-      `   响应: ${projectsResult.content[0].text.substring(0, 100)}...`
+      `   响应: ${projectsResult.content[0].text.substring(0, 100)}...`,
     );
     console.log("");
 
@@ -141,7 +141,7 @@ async function testMCPServer() {
 
     console.log("✅ 创建仓库成功!");
     console.log(
-      `   响应: ${createResult.content[0].text.substring(0, 200)}...`
+      `   响应: ${createResult.content[0].text.substring(0, 200)}...`,
     );
     console.log("");
 
