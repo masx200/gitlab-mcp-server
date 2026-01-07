@@ -6,17 +6,17 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.corepack 
+    pkgs.corepack
     pkgs.pnpm
     # pkgs.go
     # pkgs.python311
     # pkgs.python311Packages.pip
-     pkgs.nodejs_22
+    pkgs.nodejs_22
     # pkgs.nodePackages.nodemon
   ];
 
   # Sets environment variables in the workspace
-  env = {};
+  env = { };
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
@@ -49,6 +49,8 @@
       };
       # Runs when the workspace is (re)started
       onStart = {
+
+        pnpm-install = "pnpm install";
         # Example: start a background task to watch and re-build backend code
         # watch-backend = "npm run watch-backend";
       };
