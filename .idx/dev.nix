@@ -44,13 +44,14 @@
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
+          pnpm-install = "npx -y pnpm install";
         # Example: install JS dependencies from NPM
         # npm-install = "npm install";
       };
       # Runs when the workspace is (re)started
       onStart = {
 
-        pnpm-install = "pnpm install";
+        pnpm-install = "npx -y pnpm install";
         # Example: start a background task to watch and re-build backend code
         # watch-backend = "npm run watch-backend";
       };
