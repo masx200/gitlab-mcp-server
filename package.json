@@ -27,6 +27,11 @@
   "devDependencies": {
     "@modelcontextprotocol/sdk": "^1.25.1"
   },
+  "pnpm": {
+    "overrides": {
+      "fast-uri": ">=3.1.2"
+    }
+  },
   "overrides": {
     "fast-uri": ">=3.1.2"
   }
