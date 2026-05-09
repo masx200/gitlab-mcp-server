@@ -60,5 +60,13 @@
   },
   "resolutions": {
     "strip-ansi": "6.0.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "fast-uri": ">=3.1.2"
+    }
+  },
+  "overrides": {
+    "fast-uri": ">=3.1.2"
   }
 }
