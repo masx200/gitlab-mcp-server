@@ -29,10 +29,10 @@
   },
   "pnpm": {
     "overrides": {
-      "fast-uri": ">=3.1.2"
+      "fast-uri": ">=4.1.2"
     }
   },
   "overrides": {
-    "fast-uri": ">=3.1.2"
+    "fast-uri": ">=4.1.2"
   }
 }
